@@ -5,12 +5,26 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Current File",
+            "name": "Run Challenge (Input)",
             "type": "python",
             "request": "launch",
             "program": "${file}",
             "console": "integratedTerminal",
-            "justMyCode": true
+            "justMyCode": true,
+            "env": {
+                "FILE": "${relativeFileDirname}/input"
+            }
+        },
+        {
+            "name": "Run Challenge (Sample Input)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "FILE": "${relativeFileDirname}/sample_input"
+            }
         }
     ]
 }
